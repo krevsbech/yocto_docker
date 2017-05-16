@@ -9,4 +9,5 @@ RUN apt-get install -y libsdl1.2-dev xterm
 RUN apt-get install -y make xsltproc docbook-utils fop dblatex xmlto
 RUN apt-get install -y python-git
 
-    
+RUN useradd -ms /bin/bash revsbech
+USER revsbech
